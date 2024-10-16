@@ -21,3 +21,6 @@ h1{
   cursor: pointer;
 }
 
+#proactivity:hover{
+  transition:  background-color 2s ease ;
+}

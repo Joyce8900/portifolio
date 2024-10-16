@@ -16,3 +16,4 @@ const tema = ()=> {
     htmlTag.setAttribute('data-bs-theme', 'light');
   }
 };
+

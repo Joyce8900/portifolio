@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,13 +96,47 @@
     </div>
   </div>
 </section>
+<section class="d-flex bg-info-subtle p-2 mt-5">
+  <p class="container w-25 d-flex justify-content-center align-items-center  h5">
+    Would you like to send me a message? Fill out the form, and I'll be available to help!
+  </p>
+
+<div class="container d-flex flex-column w-25 ">
+  <form
+    action="https://formspree.io/f/xldeeoze"
+    method="POST"
+    
+  >
+    <div class="mb-3">
+      <label for="email" class="form-label">Your email:</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com" required>
+      <div class="invalid-feedback">
+        Please enter a valid email.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Your message:</label>
+      <textarea name="message" id="message" class="form-control" rows="4" placeholder="Type your message here" required></textarea>
+      <div class="invalid-feedback">
+        Please enter your message.
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+
+  </form>
+</div>
+</section>
+
+
 
 <!-- Skills -->
 <div class="" data-aos="fade-down">
   <p class="h1 text-primary mt-3" id="main-projects">Skills:</p>
 </div>
 
-<section class="w-50 m-auto mb-3">
+<section class="w-50 m-auto mb-3" id="proactivity">
   <div class="container d-flex flex-row align-items-center">
     <p class="h3 text-secondary me-3">Proactivity</p>
     <div class="progress w-100">
@@ -131,7 +165,7 @@
 
 <!-- TECHNOLOGIES  -->
 <div class="">
-  <p class="h1 text-primary mt-3" id="main-projects" data-aos="fade-left">Technologies:</p>
+  <p class="h1 text-primary mt-3" id="main-projects" >Technologies:</p>
 </div>
 <section class="w-50 m-auto mb-3">
   <div class="container d-flex flex-row align-items-center">
