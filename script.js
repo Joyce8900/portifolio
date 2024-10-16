@@ -1,3 +1,4 @@
+//scoll
 document.addEventListener('DOMContentLoaded', function () {
   AOS.init({
     duration: 800,
@@ -5,12 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-window.addEventListener('scroll', () => {
-  const progressBars = document.querySelectorAll('.progress-bar');
-  progressBars.forEach(bar => {
-    const value = bar.getAttribute('aria-valuenow');
-    bar.style.width = `${value}%`;
-  });
-});
-
-
+//Tema dark
+const htmlTag = document.documentElement;
+const tema = ()=> {
+  
+  if (htmlTag.getAttribute('data-bs-theme') === 'light') {
+    htmlTag.setAttribute('data-bs-theme', 'dark');
+  } else {
+    htmlTag.setAttribute('data-bs-theme', 'light');
+  }
+};
